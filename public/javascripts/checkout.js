@@ -1,6 +1,8 @@
 
+// P@ssfor..
+
 const PUBLIC_KEY = 'pk_test_WOnXuhbPkhB7spgPZYNMznNC';
-const PRIVATE_KEY= '';
+const SECRET_KEY= 'sk_test_HP2EmokBxhsYtEWuh94UgzNL';
 
 Stripe.setPublishableKey(PUBLIC_KEY);
 
