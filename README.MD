@@ -1,1 +1,1 @@
-# NodeJS Shopping Cart
+# NodeJS Shopping Cart Project
