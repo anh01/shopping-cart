@@ -78,20 +78,14 @@ router.post('/checkout', function (req, res, next) {
           paymentId: charge.id
       });
 
+        order.save(function (err, result) {
+          if (err) {
+            console.log(err.message);
+          }
           req.flash('success', 'Successfully bought product!');
           req.session.cart = null;
           res.redirect('/');
-
-      // var prom = order.save();
-      // prom.then(function () {
-      //     console.log('In Promise');
-      //     req.flash('success', 'Successfully bought product!');
-      //     req.session.cart = null;
-      //     res.redirect('/');
-      //   });
-        // .catch( function (error) {
-        //   console.log('Promise error');
-        // });
+        });
   });
 });
 
